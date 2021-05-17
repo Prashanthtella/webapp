@@ -8,7 +8,7 @@
 
     <packaging>jar</packaging>
 
-    <name>Babel :: Camel Archetype</name>
+	<name>Babel :: Camel Archetype</name>
 
     <parent>
         <groupId>io.xtech.babel</groupId>
@@ -34,6 +34,7 @@
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring</artifactId>
         </dependency>
+
 
         <!-- spring -->
         <dependency>
@@ -85,25 +86,7 @@
         </dependency>
 
         <!-- babel -->
-        <dependency>
-            <groupId>io.xtech.babel</groupId>
-            <artifactId>babel-fish</artifactId>
-            <version>0.6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.xtech.babel</groupId>
-            <artifactId>babel-camel-core</artifactId>
-            <version>0.6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.xtech.babel</groupId>
-            <artifactId>babel-camel-mock</artifactId>
-            <version>0.6.0</version>
-            <scope>test</scope>
-        </dependency>
-
+        
     </dependencies>
 
     <build>
@@ -145,10 +128,7 @@
 
 
             <!-- scala compilation -->
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-            </plugin>
+            
 
         </plugins>
     </build>
